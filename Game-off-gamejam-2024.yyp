@@ -34,13 +34,18 @@
   },
   "name":"Game-off-gamejam-2024",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"menu_button","path":"objects/menu_button/menu_button.yy",},},
+    {"id":{"name":"ui_text","path":"objects/ui_text/ui_text.yy",},},
+    {"id":{"name":"rm_game_room","path":"rooms/rm_game_room/rm_game_room.yy",},},
+    {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"id":{"name":"Player","path":"scripts/Player/Player.yy",},},
+    {"id":{"name":"bar_fill","path":"sprites/bar_fill/bar_fill.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"roomId":{"name":"rm_game_room","path":"rooms/rm_game_room/rm_game_room.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
