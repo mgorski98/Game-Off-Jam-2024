@@ -1,3 +1,12 @@
+var _color = normal_color
+
+if (pressed){
+	_color = click_color
+} else if (hovered_over){
+	_color = hover_color
+}
+
+image_blend = _color
 draw_self()
 
 draw_set_color(c_black)
