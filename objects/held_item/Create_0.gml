@@ -1,0 +1,2 @@
+#macro HELD_ITEM_DRAW_DEPTH -1
+#macro DEFAULT_DEPTH  0
