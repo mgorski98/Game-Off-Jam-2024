@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Player",
+  "%Name":"scr_interactions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Player",
+  "name":"scr_interactions",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
