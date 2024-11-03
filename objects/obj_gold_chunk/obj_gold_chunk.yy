@@ -12,8 +12,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"interactable",
-    "path":"objects/interactable/interactable.yy",
+    "name":"held_item",
+    "path":"objects/held_item/held_item.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -36,7 +36,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"star",
+    "path":"sprites/star/star.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
