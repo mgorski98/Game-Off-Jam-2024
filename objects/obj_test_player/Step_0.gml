@@ -10,11 +10,9 @@ if (current_interactable != noone && currently_picked_up == noone) {
 }
 
 if (interaction_prompt != noone) {
-	if (_show_prompt) {
-		instance_activate_object(interaction_prompt);
-	}else {
-		instance_deactivate_object(interaction_prompt);
-	}
+	//if _show_prompt {
+	//	interaction_prompt.image_alpha = 1;
+	//} else { interaction_prompt.image_alpha = 0; }
 	if (current_interactable != noone) {
 		interaction_prompt.x = current_interactable.x;
 		var _new_y =  current_interactable.y - current_interactable.sprite_height / 2

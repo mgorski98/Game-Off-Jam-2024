@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_interaction_prompt",
+  "%Name":"obj_pause_controller",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_interaction_prompt",
+  "name":"obj_pause_controller",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -25,16 +26,11 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"y_offset_from_top","filters":[],"listItems":[],"multiselect":false,"name":"y_offset_from_top","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"22","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"temp_tab_hover",
-    "path":"sprites/temp_tab_hover/temp_tab_hover.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
