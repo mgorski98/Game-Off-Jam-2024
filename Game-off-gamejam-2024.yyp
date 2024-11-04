@@ -43,7 +43,6 @@
     {"id":{"name":"obj_pause_controller","path":"objects/obj_pause_controller/obj_pause_controller.yy",},},
     {"id":{"name":"obj_test_player","path":"objects/obj_test_player/obj_test_player.yy",},},
     {"id":{"name":"ui_text","path":"objects/ui_text/ui_text.yy",},},
-    {"id":{"name":"rm_game_paused","path":"rooms/rm_game_paused/rm_game_paused.yy",},},
     {"id":{"name":"rm_game_room","path":"rooms/rm_game_room/rm_game_room.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"id":{"name":"rm_test_room","path":"rooms/rm_test_room/rm_test_room.yy",},},
@@ -60,7 +59,6 @@
     {"roomId":{"name":"rm_test_room","path":"rooms/rm_test_room/rm_test_room.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"roomId":{"name":"rm_game_room","path":"rooms/rm_game_room/rm_game_room.yy",},},
-    {"roomId":{"name":"rm_game_paused","path":"rooms/rm_game_paused/rm_game_paused.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
