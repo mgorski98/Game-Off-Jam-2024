@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"tiles_test",
-    "path":"sprites/tiles_test/tiles_test.yy",
+    "name":"tile",
+    "path":"sprites/tile/tile.yy",
   },
   "spriteMaskId":null,
   "visible":true,
