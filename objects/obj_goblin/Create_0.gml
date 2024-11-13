@@ -8,6 +8,8 @@ enum EnemyState {
 	attacking = 4
 }
 
+self.player_ref = obj_test_player;
+
 self.target = noone;
 self.state = EnemyState.wandering;
 
@@ -20,5 +22,8 @@ self.vsp = 0
 self.hsp = 0
 self.grv = 0.2
 
-image_xscale = self.current_direction;
+self.gold_detect_buffer = ds_list_create();
+
+self.last_visible = true;
+
 image_blend = c_red;
