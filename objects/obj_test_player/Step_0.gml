@@ -39,8 +39,8 @@ if (keyboard_check_pressed(ord("Q"))) {
 
 if (currently_picked_up != noone) {
 	//todo: to poprawić, jak dojdzie flipowanie sprite'a - wtedy przemnożyć razy 1 albo -1
-	currently_picked_up.x = x + picked_up_item_x_offset;
-	currently_picked_up.y = y + picked_up_item_y_offset;
+	currently_picked_up.phy_position_x = x + picked_up_item_x_offset;
+	currently_picked_up.phy_position_y = y + picked_up_item_y_offset;
 }
 
 if (keyboard_check(vk_left) or keyboard_check(ord("A"))){
@@ -48,3 +48,23 @@ if (keyboard_check(vk_left) or keyboard_check(ord("A"))){
 }
 
 if (keyboard_check(vk_right) or keyboard_check(ord("D"))){ x+=1; }
+
+if (keyboard_check(vk_up) or keyboard_check(ord("W"))) { y -= 1; }
+if (keyboard_check(vk_down) or keyboard_check(ord("S"))) { y += 1; }
+
+if (mouse_check_button_pressed(mb_left) and self.currently_picked_up != noone) {
+	var picked = self.currently_picked_up;
+	var throw_dir =  point_direction(x, y, mouse_x, mouse_y);
+	var force_mul = self.throw_force;
+	picked.phy_active = true;
+	//todo: ogarnąć jak poprawnie policzyć ten zasrany kierunek i zaaplikować siłę
+	with (picked){
+		var force_x = lengthdir_x(force_mul, throw_dir);
+		var force_y = lengthdir_y(force_mul, throw_dir);
+		physics_apply_force(picked.x, picked.y, force_x, force_y);
+	}
+	picked.can_be_interacted_with = true;
+	picked.can_be_picked_up = true;
+	picked.is_held = false;
+	self.currently_picked_up = noone;
+}

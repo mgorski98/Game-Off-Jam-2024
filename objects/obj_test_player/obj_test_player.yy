@@ -33,6 +33,7 @@
     {"$GMObjectProperty":"v1","%Name":"currently_picked_up","filters":[],"listItems":[],"multiselect":false,"name":"currently_picked_up","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"picked_up_item_x_offset","filters":[],"listItems":[],"multiselect":false,"name":"picked_up_item_x_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"16","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"picked_up_item_y_offset","filters":[],"listItems":[],"multiselect":false,"name":"picked_up_item_y_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"throw_force","filters":[],"listItems":[],"multiselect":false,"name":"throw_force","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3000","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

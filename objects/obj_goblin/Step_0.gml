@@ -33,7 +33,12 @@ function run_gold_detection() {
 }
 
 function is_visible_on_screen() {
-	return true;
+	var cam = view_camera[0];
+	var _x = camera_get_view_x(cam);
+	var _y = camera_get_view_y(cam);
+	var w = _x + camera_get_view_width(cam);
+	var h = _y + camera_get_view_height(cam);
+	return point_in_rectangle(x, y, _x, _y, w, h);
 }
 
 function check_if_on_screen() {
@@ -213,11 +218,15 @@ switch (self.state){
 		} else {
 			check_if_wall_in_front(tile_below);
 			check_if_gap_in_front(tile_below);
-			var _x = self.target.x - x;
-			var dir = sign(_x);
-			if dir == 0 { dir = 1; }
-			self.current_direction = dir;
-			hsp = run_away_and_chase_speed * self.current_direction;
+			if instance_exists(self.target) {
+				var _x = self.target.x - x;
+				var dir = sign(_x);
+				if dir == 0 { dir = 1; }
+				self.current_direction = dir;
+				hsp = run_away_and_chase_speed * self.current_direction;
+			} else {
+				self.target = noone;
+			}
 		}
 		
 		break;
@@ -246,8 +255,22 @@ switch (self.state){
 self.vsp += self.grv;
 
 run_collision_detection();
+if self.held_gold_object == noone || !instance_exists(self.held_gold_object) {
+	var gold = instance_place(x, y, obj_gold_chunk);
+	if gold != noone {
+		if gold.can_be_picked_up == true {
+			change_state(EnemyState.running_away);
+			self.held_gold_object = gold;
+			self.target = noone;
+			gold.can_be_picked_up = false;
+			gold.is_held = true;
+			gold.phy_active = false;
+		}
+	}
+}
 
-if self.held_gold_object != noone {
-	self.held_gold_object.x = x + held_gold_x_offset * self.current_direction;
-	self.held_gold_object.y = y + held_gold_y_offset;
+if self.held_gold_object != noone && instance_exists(self.held_gold_object) {
+	//jeśli na ciało działa fizyka, to trzeba ustawić phy_position nawet jeśli dziad ma wyłączoną symulację fizyki -.-
+	self.held_gold_object.phy_position_x = x + held_gold_x_offset * self.current_direction;
+	self.held_gold_object.phy_position_y = y + held_gold_y_offset
 }
