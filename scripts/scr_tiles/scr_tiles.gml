@@ -3,6 +3,9 @@
 
 //self explanatory
 function damage_tile(_tile, _damage_value){
+	if _tile.indestructible {
+		return;
+	}
 	_tile.current_health -= _damage_value;
 	if _tile.current_health <= 0 {
 		instance_destroy(_tile);
