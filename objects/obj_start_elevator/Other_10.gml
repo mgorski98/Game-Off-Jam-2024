@@ -1,8 +1,8 @@
 event_inherited();
-if obj_test_player.currently_picked_up != noone {
-	var gold = obj_test_player.currently_picked_up;
+if oPlayer.currently_picked_up != noone {
+	var gold = oPlayer.currently_picked_up;
 	current_gold_pieces += 1;
-	obj_test_player.currently_picked_up = noone;
+	oPlayer.currently_picked_up = noone;
 	instance_destroy(gold);
 }
 //jak gracz nie ma golda, to ustaw flagę can_be_interacted_with na false
