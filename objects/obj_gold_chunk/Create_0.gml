@@ -1,2 +1,2 @@
 
-value = irandom_range(min_value, max_value)
+//self.gravity = 0.1;
