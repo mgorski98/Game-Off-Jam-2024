@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"temp_tab_hover",
-    "path":"sprites/temp_tab_hover/temp_tab_hover.yy",
+    "name":"input_prompt_e_key",
+    "path":"sprites/input_prompt_e_key/input_prompt_e_key.yy",
   },
   "spriteMaskId":null,
   "visible":true,

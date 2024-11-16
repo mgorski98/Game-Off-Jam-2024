@@ -8,7 +8,7 @@ enum EnemyState {
 	attacking = 4
 }
 
-self.player_ref = obj_test_player;
+self.player_ref = oPlayer;
 
 self.target = noone;
 self.state = EnemyState.wandering;
