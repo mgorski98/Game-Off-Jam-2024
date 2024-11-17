@@ -86,5 +86,20 @@ if (hsp != 0)
 
 
 run_interaction_logic();
-run_throw_logic();
 
+if (mouse_check_button_pressed(mb_left) and self.currently_picked_up == noone and can_mine) {
+	var mouse_dir = point_direction(x,y,mouse_x,mouse_y);
+	var end_x = lengthdir_x(mining_range, mouse_dir);
+	var end_y = lengthdir_y(mining_range, mouse_dir);
+	var items = physics_raycast(x, y, x + end_x, y + end_y, obj_environment_tile);
+	if array_length(items) > 0 {
+		var hit = array_get(items, 0);
+		var hit_tile = hit.instance;
+		hit_tile.spawn_debris(hit.hitpointX, hit.hitpointY);
+		damage_tile(hit_tile, mining_damage);
+		alarm[0] = game_get_speed(gamespeed_fps) * mine_cooldown_secs;
+		can_mine = false;
+	}
+}
+
+run_throw_logic();
