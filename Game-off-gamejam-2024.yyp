@@ -63,6 +63,7 @@
     {"id":{"name":"gentle_forest_v02","path":"sprites/gentle_forest_v02/gentle_forest_v02.yy",},},
     {"id":{"name":"input_prompt_e_key","path":"sprites/input_prompt_e_key/input_prompt_e_key.yy",},},
     {"id":{"name":"lever","path":"sprites/lever/lever.yy",},},
+    {"id":{"name":"s_tile_debris_dummy_sprite","path":"sprites/s_tile_debris_dummy_sprite/s_tile_debris_dummy_sprite.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sPlayerA","path":"sprites/sPlayerA/sPlayerA.yy",},},
     {"id":{"name":"sPlayerR","path":"sprites/sPlayerR/sPlayerR.yy",},},
