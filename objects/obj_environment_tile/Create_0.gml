@@ -19,7 +19,6 @@ function spawn_debris(contact_x, contact_y/*, normal_x, normal_y*/) {
 			var xforce = lengthdir_x(force, actual_dir);
 			var yforce = lengthdir_y(force, actual_dir);
 			physics_apply_force(x, y, xforce, yforce);
-			//physics_apply_force(x, y, normal_x * force, normal_y * force);
 		}
 	}
 }
