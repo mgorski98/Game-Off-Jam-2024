@@ -45,6 +45,7 @@
     {"id":{"name":"obj_start_elevator_control_lever","path":"objects/obj_start_elevator_control_lever/obj_start_elevator_control_lever.yy",},},
     {"id":{"name":"obj_start_elevator","path":"objects/obj_start_elevator/obj_start_elevator.yy",},},
     {"id":{"name":"obj_test_player","path":"objects/obj_test_player/obj_test_player.yy",},},
+    {"id":{"name":"obj_tile_debris","path":"objects/obj_tile_debris/obj_tile_debris.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"ui_text","path":"objects/ui_text/ui_text.yy",},},

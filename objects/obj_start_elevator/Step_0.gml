@@ -12,7 +12,12 @@ if self.elevator_going {
 		self.elevator_going = false;
 		self.can_be_interacted_with = true;
 		obj_start_elevator_control_lever.can_be_interacted_with = true;
+		if self.elevator_direction < 0 {
+			//winda jedzie do góry - niech zniknie na ~x sekund a potem wróci i zjedzie
+			alarm[0] = elevator_disappear_time * game_get_speed(gamespeed_fps);
+			elevator_disappeared = true;
+		}
 	}
 }
 
-self.can_be_interacted_with = not self.elevator_going and obj_test_player.currently_picked_up != noone;
+self.can_be_interacted_with = not self.elevator_going and oPlayer.currently_picked_up != noone;
