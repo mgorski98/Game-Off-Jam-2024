@@ -1,4 +1,9 @@
 current_health = hit_durability;
+self.gold_overlay_sprite = undefined;
+if array_length(self.gold_sprite_overlays) > 0 {
+	var idx = irandom_range(0, array_length(self.gold_sprite_overlays) - 1);
+	self.gold_overlay_sprite = self.gold_sprite_overlays[idx];
+}
 auto_tile(self);
 
 function spawn_debris(contact_x, contact_y/*, normal_x, normal_y*/) {

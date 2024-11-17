@@ -1,7 +1,7 @@
 event_inherited();
 if oPlayer.currently_picked_up != noone {
 	var gold = oPlayer.currently_picked_up;
-	current_gold_pieces += 1;
+	current_gold_pieces += gold.gold_value;
 	oPlayer.currently_picked_up = noone;
 	instance_destroy(gold);
 }

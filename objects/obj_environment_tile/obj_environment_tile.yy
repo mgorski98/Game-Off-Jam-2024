@@ -44,6 +44,7 @@
     {"$GMObjectProperty":"v1","%Name":"debris_fly_force","filters":[],"listItems":[],"multiselect":false,"name":"debris_fly_force","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"12.5","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"debris_fly_spread_degrees","filters":[],"listItems":[],"multiselect":false,"name":"debris_fly_spread_degrees","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"debris_fly_force_variance","filters":[],"listItems":[],"multiselect":false,"name":"debris_fly_force_variance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.75","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"gold_sprite_overlays","filters":[],"listItems":[],"multiselect":false,"name":"gold_sprite_overlays","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Item 0\"","varType":6,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
