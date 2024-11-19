@@ -1,10 +1,18 @@
-/// @description Insert description here
-
-//TODO; maybe the goblin despawns when it carries a gold chunk and is out of bounds of screen for a couple of seconds?
-//todo: if he disappears then play a sound so that the player will know he nicked a gold chunk
-//todo: maybe goblins hurt players on collision?
-//todo: if goblins collide with gold, they pick it up and run the fuck away
-//todo: in the walking states the goblin should also check for gaps in the ground and jump over them or (if they are too big) go back
+function drop_held_gold() {
+	if !(self.held_gold_object != noone && instance_exists(self.held_gold_object)) {
+		return;
+	}
+	
+	change_state(EnemyState.running_away);
+	var gold = self.held_gold_object;
+	self.held_gold_object = noone;
+	can_pick_up_gold = false;
+	gold.can_be_picked_up = true;
+	gold.is_held = false;
+	gold.can_be_interacted_with = true;
+	gold.phy_active = true;
+	alarm[1] = game_get_speed(gamespeed_fps) * hit_run_away_timer;
+}
 
 function detect_gold_around() {
 	var count = collision_circle_list(x, y, self.gold_sniffing_range, obj_gold_chunk, false, true, self.gold_detect_buffer, true);
@@ -71,8 +79,6 @@ function check_if_on_screen() {
 }
 
 function check_if_wall_in_front(tb) {
-	//todo: jeśli jest w stanie ucieczki to nie zawraca na ścianach tylko próbuje wskoczyć
-	//todo: uwzględnić inną wysokość skoku podczas ucieczki
 	var hor_tile = instance_place(x + self.current_direction * self.collision_detection_range, y, obj_environment_tile);
 	if hor_tile != noone and not jumping and tb != noone {
 		var jump_str = self.jump_height;
@@ -91,7 +97,6 @@ function check_if_wall_in_front(tb) {
 }
 
 function check_if_gap_in_front(tb) {
-	//todo: uwzględnić inną wysokość skoku podczas ucieczki
 	if tb != noone and not jumping {
 		var _x = self.x + (self.sprite_width / 4) * self.current_direction;
 		var line_length = tb.sprite_height * 2;
@@ -212,7 +217,7 @@ switch (self.state){
 	}
 	
 	case EnemyState.following_target: {
-		if self.target == noone {
+		if self.target == noone || point_distance(x,y,self.target.x, self.target.y) {
 			change_state(EnemyState.wandering);
 			self.wander_target_choose_timer = random_range(self.wander_timer_min, self.wander_timer_max);
 		} else {
@@ -256,15 +261,18 @@ self.vsp += self.grv;
 
 run_collision_detection();
 if self.held_gold_object == noone || !instance_exists(self.held_gold_object) {
-	var gold = instance_place(x, y, obj_gold_chunk);
-	if gold != noone {
-		if gold.can_be_picked_up == true {
-			change_state(EnemyState.running_away);
-			self.held_gold_object = gold;
-			self.target = noone;
-			gold.can_be_picked_up = false;
-			gold.is_held = true;
-			gold.phy_active = false;
+	if can_pick_up_gold {
+		var gold = instance_place(x, y, obj_gold_chunk);
+		if gold != noone && gold != oPlayer.currently_picked_up {
+			if gold.can_be_picked_up == true {
+				change_state(EnemyState.running_away);
+				self.held_gold_object = gold;
+				self.target = noone;
+				gold.can_be_picked_up = false;
+				gold.is_held = true;
+				gold.can_be_interacted_with = false;
+				gold.phy_active = false;
+			}
 		}
 	}
 }

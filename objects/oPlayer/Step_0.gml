@@ -91,15 +91,25 @@ if (mouse_check_button_pressed(mb_left) and self.currently_picked_up == noone an
 	var mouse_dir = point_direction(x,y,mouse_x,mouse_y);
 	var end_x = lengthdir_x(mining_range, mouse_dir);
 	var end_y = lengthdir_y(mining_range, mouse_dir);
-	var items = physics_raycast(x, y, x + end_x, y + end_y, obj_environment_tile);
-	if array_length(items) > 0 {
-		var hit = array_get(items, 0);
-		var hit_tile = hit.instance;
-		hit_tile.spawn_debris(hit.hitpointX, hit.hitpointY);
-		damage_tile(hit_tile, mining_damage);
-		alarm[0] = game_get_speed(gamespeed_fps) * mine_cooldown_secs;
-		can_mine = false;
+	
+	//first detect a goblin.
+	var goblin = collision_line(x, y, x + end_x, y + end_y, obj_goblin, false, true);
+	if goblin != noone {
+		goblin.can_pick_up_gold = false;
+		goblin.drop_held_gold();
+		goblin.change_state(EnemyState.running_away);
+	} else {
+		var items = physics_raycast(x, y, x + end_x, y + end_y, obj_environment_tile);
+		if array_length(items) > 0 {
+			var hit = array_get(items, 0);
+			var hit_tile = hit.instance;
+			hit_tile.spawn_debris(hit.hitpointX, hit.hitpointY);
+			damage_tile(hit_tile, mining_damage);
+			can_mine = false;
+		}
 	}
+	
+	alarm[0] = game_get_speed(gamespeed_fps) * mine_cooldown_secs;
 }
 
 run_throw_logic();
