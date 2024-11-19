@@ -7,8 +7,6 @@ function drop_held_gold() {
 	var gold = self.held_gold_object;
 	self.held_gold_object = noone;
 	can_pick_up_gold = false;
-	gold.can_be_picked_up = true;
-	gold.is_held = false;
 	gold.can_be_interacted_with = true;
 	gold.phy_active = true;
 	alarm[1] = game_get_speed(gamespeed_fps) * hit_run_away_timer;
@@ -19,7 +17,7 @@ function detect_gold_around() {
 	if count > 0 {
 		for (var i = 0; i < count; i += 1;) {
 			var val = ds_list_find_value(self.gold_detect_buffer, i);
-			if val.can_be_picked_up == true {
+			if val.can_be_interacted_with == true {
 				return val;
 			}
 		}
@@ -217,7 +215,7 @@ switch (self.state){
 	}
 	
 	case EnemyState.following_target: {
-		if self.target == noone || point_distance(x,y,self.target.x, self.target.y) {
+		if self.target == noone || point_distance(x,y,self.target.x, self.target.y) > self.gold_sniffing_range {
 			change_state(EnemyState.wandering);
 			self.wander_target_choose_timer = random_range(self.wander_timer_min, self.wander_timer_max);
 		} else {
@@ -264,14 +262,17 @@ if self.held_gold_object == noone || !instance_exists(self.held_gold_object) {
 	if can_pick_up_gold {
 		var gold = instance_place(x, y, obj_gold_chunk);
 		if gold != noone && gold != oPlayer.currently_picked_up {
-			if gold.can_be_picked_up == true {
+			if gold.can_be_interacted_with == true {
 				change_state(EnemyState.running_away);
+				self.wander_target_choose_timer = random_range(self.wander_timer_min, self.wander_timer_max)
 				self.held_gold_object = gold;
 				self.target = noone;
-				gold.can_be_picked_up = false;
-				gold.is_held = true;
 				gold.can_be_interacted_with = false;
 				gold.phy_active = false;
+				//bo z jakiegoś powodu akurat rzucając w goblina dziedziczona jest prędkość
+				gold.phy_angular_velocity = 0;
+				gold.phy_linear_velocity_x = 0;
+				gold.phy_linear_velocity_y = 0;
 			}
 		}
 	}
