@@ -106,6 +106,7 @@
     {"name":"inst_76795ADC","path":"rooms/rm_platformer_room/rm_platformer_room.yy",},
     {"name":"inst_5879C129","path":"rooms/rm_platformer_room/rm_platformer_room.yy",},
     {"name":"inst_58506639","path":"rooms/rm_platformer_room/rm_platformer_room.yy",},
+    {"name":"inst_29A160FB","path":"rooms/rm_platformer_room/rm_platformer_room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -138,6 +139,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_goblin","path":"objects/obj_goblin/obj_goblin.yy",},"propertyId":{"name":"enemy_speed","path":"objects/obj_goblin/obj_goblin.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_goblin","path":"objects/obj_goblin/obj_goblin.yy",},"propertyId":{"name":"run_away_and_chase_speed","path":"objects/obj_goblin/obj_goblin.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":494.0,"y":408.0,},
+        {"$GMRInstance":"v1","%Name":"inst_29A160FB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_29A160FB","objectId":{"name":"obj_exit_door","path":"objects/obj_exit_door/obj_exit_door.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":832.0,"y":466.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Walls","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_51B23062","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_51B23062","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":480.0,},

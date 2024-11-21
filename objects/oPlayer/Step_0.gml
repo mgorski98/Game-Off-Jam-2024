@@ -95,9 +95,14 @@ if (mouse_check_button_pressed(mb_left) and self.currently_picked_up == noone an
 	//first detect a goblin.
 	var goblin = collision_line(x, y, x + end_x, y + end_y, obj_goblin, false, true);
 	if goblin != noone {
+		var gold = goblin.held_gold_object;
 		goblin.can_pick_up_gold = false;
 		goblin.drop_held_gold();
 		goblin.change_state(EnemyState.running_away);
+		var drop_mul = goblin_drop_gold_force_mul;
+		with (gold) {
+			physics_apply_force(gold.x, gold.y, lengthdir_x(drop_mul, mouse_dir), lengthdir_y(drop_mul, mouse_dir));
+		}
 	} else {
 		var items = physics_raycast(x, y, x + end_x, y + end_y, obj_environment_tile);
 		if array_length(items) > 0 {
