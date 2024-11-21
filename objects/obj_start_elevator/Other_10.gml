@@ -10,5 +10,4 @@ self.current_status_text = string("{0}/{1}", current_gold_pieces, target_gold_pi
 //todo: update the stored gold sprite
 if current_gold_pieces >= target_gold_pieces {
 	obj_start_elevator_control_lever.can_be_interacted_with = true;
-	quota_was_fulfilled = true;
 }

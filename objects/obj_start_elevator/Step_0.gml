@@ -20,4 +20,4 @@ if self.elevator_going {
 	}
 }
 
-self.can_be_interacted_with = not self.elevator_going and oPlayer.currently_picked_up != noone;
+self.can_be_interacted_with = not self.elevator_going and oPlayer.currently_picked_up != noone and self.current_gold_pieces < self.target_gold_pieces;
