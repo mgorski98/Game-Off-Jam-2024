@@ -40,6 +40,7 @@
     {"id":{"name":"obj_door_indicator","path":"objects/obj_door_indicator/obj_door_indicator.yy",},},
     {"id":{"name":"obj_environment_tile","path":"objects/obj_environment_tile/obj_environment_tile.yy",},},
     {"id":{"name":"obj_exit_door","path":"objects/obj_exit_door/obj_exit_door.yy",},},
+    {"id":{"name":"obj_game_initializer","path":"objects/obj_game_initializer/obj_game_initializer.yy",},},
     {"id":{"name":"obj_goblin_spawner","path":"objects/obj_goblin_spawner/obj_goblin_spawner.yy",},},
     {"id":{"name":"obj_goblin","path":"objects/obj_goblin/obj_goblin.yy",},},
     {"id":{"name":"obj_gold_chunk","path":"objects/obj_gold_chunk/obj_gold_chunk.yy",},},
