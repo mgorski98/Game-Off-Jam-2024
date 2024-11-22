@@ -9,5 +9,7 @@ if oPlayer.currently_picked_up != noone {
 self.current_status_text = string("{0}/{1}", current_gold_pieces, target_gold_pieces);
 //todo: update the stored gold sprite
 if current_gold_pieces >= target_gold_pieces {
-	obj_start_elevator_control_lever.can_be_interacted_with = true;
+	//obj_start_elevator_control_lever.can_be_interacted_with = true;
+	can_be_interacted_with = false;
+	activate_elevator(elevator_direction * -1);
 }

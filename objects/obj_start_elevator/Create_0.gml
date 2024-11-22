@@ -6,7 +6,6 @@ function activate_elevator(go_direction) {
 	self.elevator_going_timer = self.elevator_move_time;
 	self.elevator_going = true;
 	self.can_be_interacted_with = false;
-	obj_start_elevator_control_lever.can_be_interacted_with = false;
 }
 
 
