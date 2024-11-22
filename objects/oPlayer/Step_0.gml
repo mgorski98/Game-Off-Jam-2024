@@ -71,8 +71,7 @@ else
 	
 	if (hsp == 0)
 	{
-		sprite_index = sPlayerStill;
-		;
+		sprite_index = sPlayerIdle;
 	}
 	else
 	{

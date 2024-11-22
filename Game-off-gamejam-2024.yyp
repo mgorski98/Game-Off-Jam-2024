@@ -70,6 +70,7 @@
     {"id":{"name":"sPlayerA","path":"sprites/sPlayerA/sPlayerA.yy",},},
     {"id":{"name":"sPlayerAir","path":"sprites/sPlayerAir/sPlayerAir.yy",},},
     {"id":{"name":"sPlayerFull","path":"sprites/sPlayerFull/sPlayerFull.yy",},},
+    {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
     {"id":{"name":"sPlayerR","path":"sprites/sPlayerR/sPlayerR.yy",},},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},},
     {"id":{"name":"sPlayerStill","path":"sprites/sPlayerStill/sPlayerStill.yy",},},
