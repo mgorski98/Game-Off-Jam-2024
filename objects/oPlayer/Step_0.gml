@@ -53,7 +53,7 @@ y = y + vsp;
 // Animation
 if (!place_meeting(x, y + 1, [oWall, obj_environment_tile]))
 {
-	sprite_index = sPlayerA;
+	sprite_index = sPlayerAir;
 	image_speed = 0;
 	if (sign(vsp) > 0)
 	{
@@ -71,11 +71,11 @@ else
 	
 	if (hsp == 0)
 	{
-		sprite_index = sPlayer;
+		sprite_index = sPlayerIdle;
 	}
 	else
 	{
-		sprite_index = sPlayerR;
+		sprite_index = sPlayerRun;
 	}
 }
 

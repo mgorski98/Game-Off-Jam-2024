@@ -45,12 +45,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayer",
-    "path":"sprites/sPlayer/sPlayer.yy",
+    "name":"sPlayerStill",
+    "path":"sprites/sPlayerStill/sPlayerStill.yy",
   },
   "spriteMaskId":{
-    "name":"sPlayer",
-    "path":"sprites/sPlayer/sPlayer.yy",
+    "name":"sPlayerStill",
+    "path":"sprites/sPlayerStill/sPlayerStill.yy",
   },
   "visible":true,
 }
