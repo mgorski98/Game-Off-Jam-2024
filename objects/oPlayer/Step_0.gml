@@ -66,7 +66,7 @@ if (!place_meeting(x, y + 1, [oWall, obj_environment_tile]))
 }
 else
 {
-	coyotetime = 5;
+	coyotetime = 7;
 	image_speed = 1;
 	
 	if (hsp == 0)
