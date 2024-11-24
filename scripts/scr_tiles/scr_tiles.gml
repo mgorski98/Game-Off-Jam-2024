@@ -8,7 +8,28 @@ function damage_tile(_tile, _damage_value){
 	}
 	_tile.current_health -= _damage_value;
 	if _tile.current_health <= 0 {
+		
+		// Destroy corresponding tile
+		var lay_id = layer_get_id("Tiles");
+		var map_id = layer_tilemap_get_id(lay_id);
+
+		var roomX = tilemap_get_cell_x_at_pixel(map_id, _tile.x, _tile.y) 
+		var roomY = tilemap_get_cell_y_at_pixel(map_id, _tile.x, _tile.y)
+
+		show_debug_message(_tile.x)
+		show_debug_message(_tile.y)
+		
+		var data = tilemap_get(map_id, roomX, roomY);
+		show_debug_message(data)
+		if (!tile_get_empty(data))
+		{
+		    data = tile_set_empty(data)
+		    tilemap_set(map_id, data, roomX, roomY);
+		}
+		//show_debug_message(x)
+		
 		instance_destroy(_tile);
+
 	}
 }
 

@@ -29,9 +29,9 @@ if (vsp < 0) && (!key_jump_held)
 }
 
 // Horizontal Collision
-if (place_meeting(x + hsp, y, [oWall, obj_environment_tile]))
+if (place_meeting(x + hsp, y, oCollision))
 {
-	while (!place_meeting(x + sign(hsp), y, [oWall, obj_environment_tile]))
+	while (!place_meeting(x + sign(hsp), y, oCollision))
 	{
 		x = x + sign(hsp);
 	}
@@ -40,9 +40,9 @@ if (place_meeting(x + hsp, y, [oWall, obj_environment_tile]))
 x = x + hsp;
 
 // Vertical Collision
-if (place_meeting(x, y + vsp, [oWall, obj_environment_tile]))
+if (place_meeting(x, y + vsp, oCollision))
 {
-	while (!place_meeting(x, y + sign(vsp), [oWall, obj_environment_tile]))
+	while (!place_meeting(x, y + sign(vsp), oCollision))
 	{
 		y = y + sign(vsp);
 	}
@@ -51,7 +51,7 @@ if (place_meeting(x, y + vsp, [oWall, obj_environment_tile]))
 y = y + vsp;
 
 // Animation
-if (!place_meeting(x, y + 1, [oWall, obj_environment_tile]))
+if (!place_meeting(x, y + 1, oCollision))
 {
 	sprite_index = sPlayerAir;
 	image_speed = 0;
@@ -83,7 +83,6 @@ if (hsp != 0)
 {
 	image_xscale = sign(hsp);
 }
-
 
 run_interaction_logic();
 
@@ -118,3 +117,38 @@ if (mouse_check_button_pressed(mb_left) and self.currently_picked_up == noone an
 }
 
 run_throw_logic();
+
+
+//var lay_id = layer_get_id("Tiles");
+//var map_id = layer_tilemap_get_id(lay_id);
+
+//var roomX = tilemap_get_cell_x_at_pixel(map_id, x, y + 32)
+//var roomY = tilemap_get_cell_y_at_pixel(map_id, x, y + 32)
+
+////show_debug_message(roomX)
+////show_debug_message(roomY)
+
+//var data = tilemap_get(map_id, roomXd, roomY);
+//if (!tile_get_empty(data))
+//{
+//	//show_debug_message(data)
+
+//    data = tile_set_empty(data)
+//    tilemap_set(map_id, data, roomX, roomY);
+//}
+
+
+//var lay_id = layer_get_id("Tiles");
+//var map_id = layer_tilemap_get_id(lay_id);
+
+//var data = tilemap_get_at_pixel(map_id, 21, 13);
+//show_debug_message(data)
+//data = tile_set_flip(data, true);
+//tilemap_clear(map_id, data);
+//tile_set_empty(data);
+//tilemap_set_at_pixel(0, data, 21, 13)
+//tilemap_set_at_pixel(map_id, data, x, y  + 10);
+
+
+
+

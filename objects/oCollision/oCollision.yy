@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"oCollision",
   "eventList":[],
   "managed":true,
-  "name":"oWall",
+  "name":"oCollision",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,5 +32,8 @@
     "path":"sprites/wall/wall.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "tags":[
+    "collision",
+  ],
+  "visible":false,
 }

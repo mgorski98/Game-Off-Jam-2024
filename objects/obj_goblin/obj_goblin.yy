@@ -64,9 +64,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"star",
-    "path":"sprites/star/star.yy",
+    "name":"sGoblin",
+    "path":"sprites/sGoblin/sGoblin.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sGoblin",
+    "path":"sprites/sGoblin/sGoblin.yy",
+  },
   "visible":true,
 }
