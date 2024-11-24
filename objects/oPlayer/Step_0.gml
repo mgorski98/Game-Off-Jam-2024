@@ -91,6 +91,7 @@ if (mouse_check_button_pressed(mb_left) and self.currently_picked_up == noone an
 	var end_x = lengthdir_x(mining_range, mouse_dir);
 	var end_y = lengthdir_y(mining_range, mouse_dir);
 	var items = physics_raycast(x, y, x + end_x, y + end_y, obj_environment_tile);
+	show_debug_message(array_length(items))
 	if array_length(items) > 0 {
 		var hit = array_get(items, 0);
 		var hit_tile = hit.instance;
