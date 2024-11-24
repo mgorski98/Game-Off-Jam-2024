@@ -274,3 +274,42 @@ if self.held_gold_object != noone && instance_exists(self.held_gold_object) {
 	self.held_gold_object.phy_position_x = x + held_gold_x_offset * self.current_direction;
 	self.held_gold_object.phy_position_y = y + held_gold_y_offset
 }
+
+
+
+// Animation
+if (!place_meeting(x, y + 1, oCollision))
+{
+	/// jump animation
+	
+	//sprite_index = sPlayerAir;
+	//image_speed = 0;
+	//if (sign(vsp) > 0)
+	//{
+	//	image_index = 1;
+	//}
+	//else
+	//{
+	//	image_index = 0;
+	//}
+}
+else // on ground
+{
+	image_speed = 1;
+	
+	if (hsp == 0)
+	{
+		sprite_index = sGoblin;
+	}
+	else
+	{
+		sprite_index = sGoblinR;
+	}
+}
+
+if (hsp != 0)
+{
+	image_xscale = sign(hsp);
+}
+
+
