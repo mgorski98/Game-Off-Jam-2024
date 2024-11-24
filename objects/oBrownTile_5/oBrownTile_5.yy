@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oPurpleTile_5",
+  "%Name":"oBrownTile_5",
   "eventList":[],
   "managed":true,
-  "name":"oPurpleTile_5",
+  "name":"oBrownTile_5",
   "overriddenProperties":[],
   "parent":{
-    "name":"PurpleTiles",
-    "path":"folders/Objects/PurpleTiles.yy",
+    "name":"BrownTiles",
+    "path":"folders/Objects/BrownTiles.yy",
   },
   "parentObjectId":{
     "name":"obj_environment_tile_gold",
@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPurple_12_gold",
-    "path":"sprites/sPurple_12_gold/sPurple_12_gold.yy",
+    "name":"sBrown_5",
+    "path":"sprites/sBrown_5/sBrown_5.yy",
   },
   "spriteMaskId":null,
   "visible":true,

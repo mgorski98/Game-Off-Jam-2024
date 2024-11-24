@@ -27,7 +27,7 @@ function damage_tile(_tile, _damage_value){
 		//    tilemap_set(map_id, data, roomX, roomY);
 		//}
 		
-		//instance_destroy(_tile);
+		instance_destroy(_tile);
 
 	}
 }
