@@ -6,3 +6,4 @@ if self.has_golden_idol {
 	self.stored_chunks = 1;
 }
 self.current_spawns = 0;
+self.image_speed = 0;

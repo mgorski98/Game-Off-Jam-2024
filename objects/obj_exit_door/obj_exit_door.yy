@@ -3,6 +3,7 @@
   "%Name":"obj_exit_door",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_exit_door",
@@ -36,6 +37,7 @@
     {"$GMObjectProperty":"v1","%Name":"indicators_offset_y","filters":[],"listItems":[],"multiselect":false,"name":"indicators_offset_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-60","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"door_indicator_sprite","filters":[],"listItems":[],"multiselect":false,"name":"door_indicator_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"s_tile_debris_dummy_sprite","path":"sprites/s_tile_debris_dummy_sprite/s_tile_debris_dummy_sprite.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"s_tile_debris_dummy_sprite","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"indicator_spacing","filters":[],"listItems":[],"multiselect":false,"name":"indicator_spacing","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"room_to_trainsition_to","filters":[],"listItems":[],"multiselect":false,"name":"room_to_trainsition_to","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
