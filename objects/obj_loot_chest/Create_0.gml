@@ -7,3 +7,4 @@ if self.has_golden_idol {
 }
 self.current_spawns = 0;
 self.image_speed = 0;
+self.open_particles = ds_list_create();

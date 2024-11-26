@@ -27,5 +27,3 @@ self.gold_detect_buffer = ds_list_create();
 self.last_visible = true;
 
 image_blend = c_red;
-
-obj_goblin_spawner.current_goblins += 1;

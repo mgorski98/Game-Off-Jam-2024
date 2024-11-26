@@ -59,6 +59,7 @@
     {"$GMObjectProperty":"v1","%Name":"held_gold_y_offset","filters":[],"listItems":[],"multiselect":false,"name":"held_gold_y_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-6","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"hit_run_away_timer","filters":[],"listItems":[],"multiselect":false,"name":"hit_run_away_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"can_pick_up_gold","filters":[],"listItems":[],"multiselect":false,"name":"can_pick_up_gold","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"spawner_ref","filters":[],"listItems":[],"multiselect":false,"name":"spawner_ref","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

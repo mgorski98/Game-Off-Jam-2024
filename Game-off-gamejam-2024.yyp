@@ -69,6 +69,7 @@
     {"id":{"name":"toggle_pause","path":"scripts/toggle_pause/toggle_pause.yy",},},
     {"id":{"name":"angelic_coin","path":"sprites/angelic_coin/angelic_coin.yy",},},
     {"id":{"name":"bar_fill","path":"sprites/bar_fill/bar_fill.yy",},},
+    {"id":{"name":"broken_overlay","path":"sprites/broken_overlay/broken_overlay.yy",},},
     {"id":{"name":"cavesofgallet_tiles","path":"sprites/cavesofgallet_tiles/cavesofgallet_tiles.yy",},},
     {"id":{"name":"elevator10","path":"sprites/elevator10/elevator10.yy",},},
     {"id":{"name":"gentle_forest_v02","path":"sprites/gentle_forest_v02/gentle_forest_v02.yy",},},
