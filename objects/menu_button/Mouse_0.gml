@@ -1,13 +1,5 @@
-switch(operation_type) {
-	case 0:
-		room_goto(rm_game_room);
-		break;
-	case 1:
-		game_end(0);
-		break;
-	case 2:
-		room_goto(rm_main_menu);
-		break;
-	default:
-		break;
+
+for (var i = 0; i < array_length(self.on_click); i += 1) {
+	var f = array_get(self.on_click, i);
+	f();
 }
