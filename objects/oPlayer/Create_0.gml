@@ -73,8 +73,6 @@ function run_throw_logic() {
 			physics_apply_force(picked.x, picked.y, force_x, force_y);
 		}
 		picked.can_be_interacted_with = true;
-		picked.can_be_picked_up = true;
-		picked.is_held = false;
 		self.currently_picked_up = noone;
 	}
 }
