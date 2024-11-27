@@ -25,4 +25,3 @@ self.grv = 0.2
 
 self.last_visible = true;
 
-image_blend = c_red;
