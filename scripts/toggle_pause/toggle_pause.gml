@@ -20,7 +20,7 @@ function toggle_pause(){
 		global.pause_surface_buffer = buffer_create(_window_width * _window_height * 4, buffer_fixed, 1);
 		buffer_get_surface(global.pause_surface_buffer, global.pause_surface, 0);
 		instance_deactivate_all(false);
-		global.pause_menu_instance = instance_create_layer(x,y,"Menus",obj_pause_menu);
+		global.pause_menu_instance = instance_create_layer(window_get_width()/2, window_get_height()/2,"Menus",obj_pause_menu);
 	}
 	else {
 		instance_activate_all();
