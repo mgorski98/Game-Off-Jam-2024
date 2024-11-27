@@ -49,6 +49,8 @@
     {"$GMObjectProperty":"v1","%Name":"debris_fly_force_variance","filters":[],"listItems":[],"multiselect":false,"name":"debris_fly_force_variance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.75","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"gold_sprite_overlays","filters":[],"listItems":[],"multiselect":false,"name":"gold_sprite_overlays","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Item 0\"","varType":6,},
     {"$GMObjectProperty":"v1","%Name":"destruction_overlay_sprite","filters":[],"listItems":[],"multiselect":false,"name":"destruction_overlay_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"broken_overlay","path":"sprites/broken_overlay/broken_overlay.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"broken_overlay","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"marked_mineable","filters":[],"listItems":[],"multiselect":false,"name":"marked_mineable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"mineable_overlay_tint","filters":[],"listItems":[],"multiselect":false,"name":"mineable_overlay_tint","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF0F0F7A","varType":7,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
