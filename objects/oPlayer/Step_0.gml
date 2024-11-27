@@ -86,6 +86,8 @@ if (hsp != 0)
 
 run_interaction_logic();
 
+mark_mineable_tile_in_range();
+
 if (mouse_check_button_pressed(mb_left) and self.currently_picked_up == noone and can_mine) {
 	var mouse_dir = point_direction(x,y,mouse_x,mouse_y);
 	var end_x = lengthdir_x(mining_range, mouse_dir);

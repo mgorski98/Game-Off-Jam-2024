@@ -40,6 +40,7 @@
     {"$GMObjectProperty":"v1","%Name":"mining_damage","filters":[],"listItems":[],"multiselect":false,"name":"mining_damage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"can_mine","filters":[],"listItems":[],"multiselect":false,"name":"can_mine","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"goblin_drop_gold_force_mul","filters":[],"listItems":[],"multiselect":false,"name":"goblin_drop_gold_force_mul","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"450","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"last_detected_tile","filters":[],"listItems":[],"multiselect":false,"name":"last_detected_tile","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

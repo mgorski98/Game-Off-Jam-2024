@@ -7,6 +7,7 @@ enum EnemyState {
 	running_away=3,
 	attacking = 4
 }
+self.gold_detect_buffer = ds_list_create();
 
 self.player_ref = oPlayer;
 
@@ -22,8 +23,5 @@ self.vsp = 0
 self.hsp = 0
 self.grv = 0.2
 
-self.gold_detect_buffer = ds_list_create();
-
 self.last_visible = true;
 
-image_blend = c_red;

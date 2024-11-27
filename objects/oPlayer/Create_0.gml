@@ -13,6 +13,7 @@ jumpbuffer = 0;
 
 interaction_prompt = instance_create_layer(x,y,"Instances",obj_interaction_prompt)
 interactables_list = ds_list_create();
+mark_tiles_detect_list = ds_list_create();
 
 function run_interaction_logic() {
 	ds_list_clear(interactables_list)
@@ -75,4 +76,33 @@ function run_throw_logic() {
 		picked.can_be_interacted_with = true;
 		self.currently_picked_up = noone;
 	}
+}
+
+function mark_mineable_tile_in_range() {
+	ds_list_clear(	mark_tiles_detect_list);
+	var mouse_dir = point_direction(x,y,mouse_x,mouse_y);
+	var end_x = lengthdir_x(mining_range, mouse_dir);
+	var end_y = lengthdir_y(mining_range, mouse_dir);
+	var detected = collision_line_list(x, y, x + end_x, y + end_y, obj_environment_tile, false, true, self.mark_tiles_detect_list, true);
+	if detected > 0 {
+		var det_tile = ds_list_find_value(self.mark_tiles_detect_list, 0);
+		if det_tile != last_detected_tile && det_tile != noone && instance_exists(det_tile) {
+			det_tile.marked_mineable = true;
+			if last_detected_tile != noone && instance_exists(last_detected_tile) {
+				last_detected_tile.marked_mineable = false;
+			}
+			last_detected_tile = det_tile;
+		}
+		last_detected_tile = det_tile;
+	} else {
+		if last_detected_tile != noone && instance_exists(last_detected_tile) {
+			last_detected_tile.marked_mineable = false;
+			last_detected_tile = noone;
+		}
+	}
+	/*if detected_tile != noone && instance_exists(detected_tile) {
+		detected_tile.marked_mineable = true;
+	}
+	
+	last_detected_tile = detected_tile;*/
 }

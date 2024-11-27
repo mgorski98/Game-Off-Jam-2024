@@ -200,7 +200,6 @@ switch (self.state){
 		//sniffing out gold
 		if self.idle_timer > 0 {
 			self.idle_timer -= dt;
-			//todo: play correct animation
 		} else {
 			self.current_direction = -self.current_direction;
 			change_state(EnemyState.wandering);
