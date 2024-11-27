@@ -85,6 +85,7 @@
     {"id":{"name":"scr_main_menu","path":"scripts/scr_main_menu/scr_main_menu.yy",},},
     {"id":{"name":"scr_tiles","path":"scripts/scr_tiles/scr_tiles.yy",},},
     {"id":{"name":"toggle_pause","path":"scripts/toggle_pause/toggle_pause.yy",},},
+    {"id":{"name":"chest_creak","path":"sounds/chest_creak/chest_creak.yy",},},
     {"id":{"name":"angelic_coin","path":"sprites/angelic_coin/angelic_coin.yy",},},
     {"id":{"name":"bar_fill","path":"sprites/bar_fill/bar_fill.yy",},},
     {"id":{"name":"broken_overlay","path":"sprites/broken_overlay/broken_overlay.yy",},},
