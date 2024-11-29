@@ -1,16 +1,16 @@
 {
   "$GMSound":"",
-  "%Name":"chest_creak",
+  "%Name":"goblin_hit",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
   "bitRate":128,
-  "compression":2,
+  "compression":0,
   "conversionMode":0,
-  "duration":0.429728,
-  "name":"chest_creak",
+  "duration":0.366208,
+  "name":"goblin_hit",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"chest_creak.wav",
+  "soundFile":"goblin_hit.wav",
   "type":2,
   "volume":1.0,
 }
