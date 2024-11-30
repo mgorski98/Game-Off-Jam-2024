@@ -54,8 +54,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"elevator10",
-    "path":"sprites/elevator10/elevator10.yy",
+    "name":"elevator",
+    "path":"sprites/elevator/elevator.yy",
   },
   "spriteMaskId":null,
   "visible":true,
