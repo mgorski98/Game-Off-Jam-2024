@@ -16,7 +16,7 @@ if current_health != hit_durability {
 	var old_color = draw_get_color();
 	draw_set_alpha(target_alpha);
 	draw_set_color(mineable_overlay_tint);
-	draw_sprite(self.destruction_overlay_sprite, 0, x, y);
+	draw_sprite_ext(self.destruction_overlay_sprite, 0, x, y, image_xscale, image_yscale, 0, image_blend, target_alpha);
 	draw_set_alpha(old_alpha);
 	draw_set_color(old_color);
 }

@@ -29,5 +29,11 @@ switch (valign) {
 
 draw_set_halign(_horizontal_align)
 draw_set_valign(_vertical_align)
-draw_set_color(text_color)
-draw_text(x,y,text)
+var old_font = draw_get_font();
+if self.font != noone {
+	draw_set_font(self.font);
+}
+draw_set_color(text_color);
+draw_text(x,y,text);
+draw_set_font(old_font);
+

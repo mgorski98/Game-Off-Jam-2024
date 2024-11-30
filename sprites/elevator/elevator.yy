@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"elevator",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":261,
   "bbox_left":0,
   "bbox_right":65,
-  "bbox_top":0,
+  "bbox_top":194,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
