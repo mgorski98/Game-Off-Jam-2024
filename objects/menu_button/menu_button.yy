@@ -47,8 +47,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"bar_fill",
-    "path":"sprites/bar_fill/bar_fill.yy",
+    "name":"ui_button",
+    "path":"sprites/ui_button/ui_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

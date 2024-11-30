@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-self.title = instance_create_layer(x, y - 62, "Menus", ui_text);
+self.title = instance_create_layer(x, y - 80, "Menus", ui_text);
 self.title.text = "Paused";
 self.resume_button = instance_create_layer(x, y, "Menus", menu_button);
 self.resume_button.subscribe(function() {
@@ -10,6 +10,7 @@ self.resume_button.subscribe(function() {
 self.resume_button.button_text = "Resume";
 self.back_to_menu_button = instance_create_layer(x,y,"Menus",menu_button);
 self.back_to_menu_button.subscribe(function(){
+	toggle_pause()
 	room_goto(rm_main_menu);
 });
 self.back_to_menu_button.button_text = "To main menu";
@@ -19,7 +20,7 @@ self.exit_button.subscribe(function() {
 	game_end(0);
 })
 
-var mult = 1.75;
+var mult = 2;
 self.resume_button.image_xscale *= mult;
 self.resume_button.image_yscale *= mult;
 
