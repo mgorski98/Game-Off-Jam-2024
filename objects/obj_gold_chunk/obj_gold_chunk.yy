@@ -42,8 +42,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"star",
-    "path":"sprites/star/star.yy",
+    "name":"golden_nugget",
+    "path":"sprites/golden_nugget/golden_nugget.yy",
   },
   "spriteMaskId":null,
   "visible":true,
