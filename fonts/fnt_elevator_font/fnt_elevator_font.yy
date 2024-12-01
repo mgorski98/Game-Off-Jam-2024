@@ -1,7 +1,7 @@
 {
   "$GMFont":"",
   "%Name":"fnt_elevator_font",
-  "AntiAlias":1,
+  "AntiAlias":0,
   "applyKerning":0,
   "ascender":24,
   "ascenderOffset":0,
@@ -107,7 +107,7 @@
     "124":{"character":124,"h":30,"offset":2,"shift":8,"w":4,"x":75,"y":34,},
     "125":{"character":125,"h":30,"offset":2,"shift":15,"w":11,"x":62,"y":34,},
     "126":{"character":126,"h":30,"offset":2,"shift":17,"w":13,"x":172,"y":130,},
-    "9647":{"character":9647,"h":30,"offset":4,"shift":20,"w":13,"x":187,"y":130,},
+    "9647":{"character":9647,"h":30,"offset":4,"shift":20,"w":12,"x":187,"y":130,},
   },
   "hinting":0,
   "includeTTF":false,
