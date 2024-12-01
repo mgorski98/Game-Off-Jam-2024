@@ -15,5 +15,7 @@ if !elevator_disappeared {
 	draw_set_font(fnt_elevator_font);
 	draw_text(x, y + self.status_text_y_offset, self.current_status_text);	
 	draw_set_font(old_font);
-}
 
+	image_index = self.current_gold_pieces
+	
+}

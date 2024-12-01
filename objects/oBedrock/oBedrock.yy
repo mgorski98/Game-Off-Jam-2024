@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oPurpleTile_2",
+  "%Name":"oBedrock",
   "eventList":[],
   "managed":true,
-  "name":"oPurpleTile_2",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_environment_tile","path":"objects/obj_environment_tile/obj_environment_tile.yy",},"propertyId":{"name":"hit_durability","path":"objects/obj_environment_tile/obj_environment_tile.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
-  ],
+  "name":"oBedrock",
+  "overriddenProperties":[],
   "parent":{
-    "name":"PurpleTiles",
-    "path":"folders/Objects/PurpleTiles.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_environment_tile",
-    "path":"objects/obj_environment_tile/obj_environment_tile.yy",
+    "name":"oCollision",
+    "path":"objects/oCollision/oCollision.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -38,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPurple_5",
-    "path":"sprites/sPurple_5/sPurple_5.yy",
+    "name":"sBedrock",
+    "path":"sprites/sBedrock/sBedrock.yy",
   },
   "spriteMaskId":null,
   "visible":true,
