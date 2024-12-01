@@ -4,14 +4,16 @@
   "eventList":[],
   "managed":true,
   "name":"oBedrock",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_environment_tile","path":"objects/obj_environment_tile/obj_environment_tile.yy",},"propertyId":{"name":"indestructible","path":"objects/obj_environment_tile/obj_environment_tile.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"oCollision",
-    "path":"objects/oCollision/oCollision.yy",
+    "name":"obj_environment_tile",
+    "path":"objects/obj_environment_tile/obj_environment_tile.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

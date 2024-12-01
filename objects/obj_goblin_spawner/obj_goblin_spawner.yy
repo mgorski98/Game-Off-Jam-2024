@@ -28,7 +28,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"goblin_spawn_limit","filters":[],"listItems":[],"multiselect":false,"name":"goblin_spawn_limit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"goblin_spawn_limit","filters":[],"listItems":[],"multiselect":false,"name":"goblin_spawn_limit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"spawn_interval","filters":[],"listItems":[],"multiselect":false,"name":"spawn_interval","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"current_goblins","filters":[],"listItems":[],"multiselect":false,"name":"current_goblins","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"spawn_timer","filters":[],"listItems":[],"multiselect":false,"name":"spawn_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
