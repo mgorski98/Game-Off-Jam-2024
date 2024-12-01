@@ -10,7 +10,7 @@ function spawn_goblin(spawn_x, spawn_y) {
 		return;
 	}
 	//current goblins is being incremented in the create/destroy events of a goblin
-	var hit_tile = collision_line(spawn_x, spawn_y, spawn_x, spawn_y + 10000, obj_environment_tile, false, true);
+	var hit_tile = collision_line(spawn_x, spawn_y, spawn_x, spawn_y + 10000, oCollision, false, true);
 	if hit_tile != noone {
 		var offset = hit_tile.sprite_height / 2;
 		var new_x = spawn_x;

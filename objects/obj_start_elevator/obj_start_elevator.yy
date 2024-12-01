@@ -35,8 +35,8 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"current_gold_pieces","filters":[],"listItems":[],"multiselect":false,"name":"current_gold_pieces","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"min_gold_pieces","filters":[],"listItems":[],"multiselect":false,"name":"min_gold_pieces","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"max_gold_pieces","filters":[],"listItems":[],"multiselect":false,"name":"max_gold_pieces","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"min_gold_pieces","filters":[],"listItems":[],"multiselect":false,"name":"min_gold_pieces","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"max_gold_pieces","filters":[],"listItems":[],"multiselect":false,"name":"max_gold_pieces","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"target_gold_pieces","filters":[],"listItems":[],"multiselect":false,"name":"target_gold_pieces","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"can_go_back","filters":[],"listItems":[],"multiselect":false,"name":"can_go_back","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"status_text_y_offset","filters":[],"listItems":[],"multiselect":false,"name":"status_text_y_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
@@ -55,8 +55,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"elevator",
-    "path":"sprites/elevator/elevator.yy",
+    "name":"sElevator_0",
+    "path":"sprites/sElevator_0/sElevator_0.yy",
   },
   "spriteMaskId":null,
   "visible":true,

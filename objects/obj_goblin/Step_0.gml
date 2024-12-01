@@ -77,7 +77,7 @@ function check_if_on_screen() {
 }
 
 function check_if_wall_in_front(tb) {
-	var hor_tile = instance_place(x + self.current_direction * self.collision_detection_range, y, obj_environment_tile);
+	var hor_tile = instance_place(x + self.current_direction * self.collision_detection_range, y, oCollision);
 	if hor_tile != noone and not jumping and tb != noone {
 		var jump_str = self.jump_height;
 		var check_height = hor_tile.y - sprite_height / 2 - 1;
@@ -85,7 +85,7 @@ function check_if_wall_in_front(tb) {
 			jump_str = self.run_away_jump_height;
 			check_height = hor_tile.y - sprite_height - sprite_height / 2 - 1
 		}
-		if place_meeting(hor_tile.x, check_height, obj_environment_tile) {
+		if place_meeting(hor_tile.x, check_height, oCollision) {
 			self.current_direction = -self.current_direction;
 		} else {
 			vsp = jump_str;
@@ -103,7 +103,7 @@ function check_if_gap_in_front(tb) {
 		if EnemyState.running_away == self.state {
 			jump_str = self.run_away_jump_height;
 		}
-		var hit = collision_line(_x, y, _x, y + line_length, obj_environment_tile, false, true);
+		var hit = collision_line(_x, y, _x, y + line_length, oCollision, false, true);
 		if (hit != noone) {
 				
 		} else {
@@ -114,10 +114,10 @@ function check_if_gap_in_front(tb) {
 }
 
 function  run_collision_detection() {
-	if place_meeting(x + hsp, y, obj_environment_tile) {
+	if place_meeting(x + hsp, y, oCollision) {
 		while (abs(hsp) > 0.1) {
 			hsp *= 0.5;
-			if (!place_meeting(x+hsp, y, obj_environment_tile)){
+			if (!place_meeting(x+hsp, y, oCollision)){
 				x+= hsp;	
 			}
 		}
@@ -126,10 +126,10 @@ function  run_collision_detection() {
 	x = x +hsp;
 
 	//vertical
-	if place_meeting(x, y + vsp, obj_environment_tile) {
+	if place_meeting(x, y + vsp, oCollision) {
 		while (abs(vsp) > 0.1) {
 			vsp *= 0.5;
-			if (!place_meeting(x, y+vsp, obj_environment_tile)){
+			if (!place_meeting(x, y+vsp, oCollision)){
 				y+= vsp;	
 			}
 		}
@@ -170,7 +170,7 @@ function change_state(newstate) {
 ds_list_clear(self.gold_detect_buffer);
 var dt = delta_time / 1000000;
 
-var tile_below = collision_line(x, y, x, y + sprite_height / 2 + 1, obj_environment_tile, false, true);
+var tile_below = collision_line(x, y, x, y + sprite_height / 2 + 1, oCollision, false, true);
 if (self.jumping && tile_below != noone) {
 	self.jumping= false; // hihihoho >:3
 }
