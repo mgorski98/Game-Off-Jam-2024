@@ -130,6 +130,7 @@
     {"id":{"name":"sBrown_5","path":"sprites/sBrown_5/sBrown_5.yy",},},
     {"id":{"name":"sChess_strip5_export","path":"sprites/sChess_strip5_export/sChess_strip5_export.yy",},},
     {"id":{"name":"sChess","path":"sprites/sChess/sChess.yy",},},
+    {"id":{"name":"sDoorBehindElevator","path":"sprites/sDoorBehindElevator/sDoorBehindElevator.yy",},},
     {"id":{"name":"sElevator_0","path":"sprites/sElevator_0/sElevator_0.yy",},},
     {"id":{"name":"sElevator_1","path":"sprites/sElevator_1/sElevator_1.yy",},},
     {"id":{"name":"sElevator_2","path":"sprites/sElevator_2/sElevator_2.yy",},},
