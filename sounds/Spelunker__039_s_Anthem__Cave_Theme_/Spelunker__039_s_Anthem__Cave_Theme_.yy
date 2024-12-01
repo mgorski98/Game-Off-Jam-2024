@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Spelunker__039_s_Anthem__Cave_Theme_",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":287.7649,
+  "name":"Spelunker__039_s_Anthem__Cave_Theme_",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Spelunker__039_s_Anthem__Cave_Theme_.mp3",
+  "type":0,
+  "volume":0.13,
+}
