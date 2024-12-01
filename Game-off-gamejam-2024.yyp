@@ -41,6 +41,7 @@
   "name":"Game-off-gamejam-2024",
   "resources":[
     {"id":{"name":"fnt_elevator_font","path":"fonts/fnt_elevator_font/fnt_elevator_font.yy",},},
+    {"id":{"name":"fnt_ending","path":"fonts/fnt_ending/fnt_ending.yy",},},
     {"id":{"name":"fnt_main_medium","path":"fonts/fnt_main_medium/fnt_main_medium.yy",},},
     {"id":{"name":"fnt_main_normal","path":"fonts/fnt_main_normal/fnt_main_normal.yy",},},
     {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},},
