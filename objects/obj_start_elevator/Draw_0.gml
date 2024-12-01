@@ -17,5 +17,4 @@ if !elevator_disappeared {
 	draw_set_font(old_font);
 
 	image_index = self.current_gold_pieces
-	
 }
