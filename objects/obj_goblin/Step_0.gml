@@ -214,7 +214,7 @@ switch (self.state){
 	}
 	
 	case EnemyState.following_target: {
-		if self.target == noone || point_distance(x,y,self.target.x, self.target.y) > self.gold_sniffing_range {
+		if self.target == noone || (instance_exists(self.target) && point_distance(x,y,self.target.x, self.target.y) > self.gold_sniffing_range) {
 			change_state(EnemyState.wandering);
 			self.wander_target_choose_timer = random_range(self.wander_timer_min, self.wander_timer_max);
 		} else {

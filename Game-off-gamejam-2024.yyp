@@ -182,8 +182,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_leveltest_4","path":"rooms/rm_leveltest_4/rm_leveltest_4.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"roomId":{"name":"rm_leveltest_4","path":"rooms/rm_leveltest_4/rm_leveltest_4.yy",},},
     {"roomId":{"name":"rm_leveltest_3","path":"rooms/rm_leveltest_3/rm_leveltest_3.yy",},},
     {"roomId":{"name":"rm_recording_room","path":"rooms/rm_recording_room/rm_recording_room.yy",},},
     {"roomId":{"name":"rm_platformer_room","path":"rooms/rm_platformer_room/rm_platformer_room.yy",},},
